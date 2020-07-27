@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="www.google.com">
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h3>A library</h3>
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <p class="heading">Name:</p>
+                <p>{{"book1.name"}}</p>
+              </div>
+              <div class="col-sm">
+                <p class="heading">Location:</p>
+                <p>{{"book1.location"}}</p>
+              </div>
+              <div class="col-sm">
+                <p class="heading">Book In?</p>
+                <p>[innerHTML]="book1.status"></p>
+                <button [disabled]="buttonDisabled">Take Out Now!</button>
+              </div>
+              <div [className]="'footer'">
+                  
+              </div>
+              
+            </div>
+
+          </div>
+          <!--Place the selector name of the subcomponent you wish to display here!-->
+
+          <!--Declare the value of a variable in the child component here if you wish to use the value of a parent
+            component by [childVariable]="parentVariable/value". Make sure it is within the element property area
+            and NOT THE CONTENT SECTION-->
+
+        <app-book-entry [user]="UserName"></app-book-entry>
+    </body>
+</html>
